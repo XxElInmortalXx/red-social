@@ -1,0 +1,41 @@
+@tailwind base;
+
+.container {
+    @apply w-[90%] max-w-7xl mx-auto
+}
+
+.container-medium {
+    @apply w-[90%] max-w-xl mx-auto
+}
+
+.block-module {
+    @apply p-6 bg-neutral-50 shadow-xl
+}
+
+.btn-1 {
+    @apply inline-block text-center py-2 px-8 bg-red-500 text-neutral-50 text-sm hover:bg-neutral-800 transition-all duration-300 w-full disabled:bg-neutral-500 disabled:text-neutral-50 disabled:cursor-not-allowed
+}
+
+.btn-2 {
+    @apply inline-block text-center w-full py-2 px-8 bg-neutral-50 text-red-500 text-sm hover:bg-neutral-800 transition-all duration-300 disabled:bg-neutral-500 disabled:text-neutral-50 disabled:cursor-not-allowed
+}
+
+.btn-3 {
+    @apply inline-block text-center w-full py-2 px-8 bg-blue-500 text-neutral-50 text-sm hover:bg-neutral-800 transition-all duration-300 disabled:bg-neutral-500 disabled:text-neutral-50 disabled:cursor-not-allowed
+}
+
+.btn-4 {
+    @apply inline-block text-center w-full py-2 px-8 bg-green-500 text-neutral-50 text-sm hover:bg-neutral-800 transition-all duration-300 disabled:bg-neutral-500 disabled:text-neutral-50 disabled:cursor-not-allowed
+}
+
+.main-principal {
+    @apply w-[90%] max-w-lg lg:max-w-7xl mx-auto grid grid-cols-1 gap-4 my-4 mb-[5.5rem] lg:grid-cols-4 place-items-start
+}
+
+/* css personalizado */
+.scrollbar-1::-webkit-scrollbar {
+    @apply h-1 w-1
+}
+.scrollbar-1::-webkit-scrollbar-thumb {
+    @apply bg-red-500 hover:cursor-pointer
+}

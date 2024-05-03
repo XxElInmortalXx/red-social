@@ -1,0 +1,56 @@
+{
+  "users": {
+    "user_id": {
+      "username": "Andres Eduardo",
+      "email": "Correo electrónico",
+      "gender": "Hombre",
+      "profile_image": "url",
+      "cover_image": "url",
+      "bio": "Bio"
+    }
+  },
+  "friends": {
+    "user_id": {
+      "friend_id": true,
+      "status": "pending"
+    }
+  },
+  "posts": {
+    "post_id": {
+      "author": "user_id",
+      "content": "Contenido del post",
+      "images": ["url1", "url2", "url3", "url4"],
+      "likes_count": 0,
+      "comments_count": 0,
+      "created_at": "timestamp",
+      "updated_at": "timestamp"
+    }
+  },
+  "likes": {
+    "post_id": {
+      "user_id": true
+    }
+  },
+  "comments": {
+    "post_id": {
+      "comment_id": {
+        "author": "user_id",
+        "content": "Contenido del comentario",
+        "created_at": "timestamp"
+      }
+    }
+  },
+  "messages": {
+    "conversation_id": {
+      "participants": {
+        "user_id": true,
+        "user_id2": true
+      },
+      "last_message": {
+        "sender": "user_id",
+        "content": "Contenido del mensaje",
+        "created_at": "timestamp"
+      }
+    }
+  }
+}
